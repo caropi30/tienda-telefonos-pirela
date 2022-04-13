@@ -2,13 +2,21 @@ import React from 'react'
 //import Component from 'react'
 import {Navbar, Nav, Container, Button} from 'react-bootstrap';
 import './NavBar.css';
+import image from '../../assets/img/logo-entel.png'
+import { FaShoppingCart } from 'react-icons/fa';
+
+
 
 
 function NavBar(){
     return(
         <Navbar bg="light" expand="lg">
-        <Container fluid>
-            <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Container fluid classNAme="d-flex justify-content-center">
+            <Navbar.Brand href="#" >
+                <figure>
+                    <img src={image} alt="Entel Logo"/>
+                </figure>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -20,7 +28,7 @@ function NavBar(){
                 <Nav.Link href="#">Equipos</Nav.Link>
                 <Nav.Link href="#">Accesorios</Nav.Link>
             </Nav>
-            <Button variant="primary">Primary</Button>{' '}
+            <Button variant="primary"><FaShoppingCart /></Button>{' '}
             </Navbar.Collapse>
         </Container>
     </Navbar> 
