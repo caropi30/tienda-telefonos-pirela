@@ -16,6 +16,7 @@ function NavBar(){
                 <figure>
                     <img src={image} alt="Entel Logo"/>
                 </figure>
+                <h1>Tienda Entel</h1>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
