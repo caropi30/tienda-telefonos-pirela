@@ -1,0 +1,12 @@
+figure {
+    width: 60px;
+  }
+  
+figure > img {
+    width: 100%;
+}
+  
+h1 {
+    font-size: 1rem;
+}
+
