@@ -26,9 +26,18 @@ function NavBar(){
                         className="me-auto my-2 my-lg-0"
                         navbarScroll
                     >
-                        <Nav.Link href="#">Home</Nav.Link>
-                        <Nav.Link href="#">Equipos</Nav.Link>
-                        <Nav.Link href="#">Accesorios</Nav.Link>
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                                </li>
+                            <li>
+                                <a href="#">Equipos</a>
+                                </li>
+                            <li>
+                                <a href="#">Accesorios</a>
+                                </li>
+                            
+                        </ul>
                     </Nav>
                 <Button variant="primary" className="me-5">Comprar <FaShoppingCart /></Button>{' '}
             </Navbar.Collapse>
