@@ -1,11 +1,11 @@
 import React from 'react';
 import './ItemListContainer.css';
-import {Navbar, Nav, Container, Button} from 'react-bootstrap';
+
 
 const ItemListContainer = (props) => {
    return(
     <>
-        <h1>{props.greeting}</h1>
+        <h1 className="title">{props.greeting}</h1>
     </>
 
    );
