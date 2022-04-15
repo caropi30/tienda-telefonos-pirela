@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
 //import Component from 'react'
 import {Navbar, Nav, Container, Button} from 'react-bootstrap';
 import './NavBar.css';
-import image from '../../assets/img/logo-entel.png'
-import { FaShoppingCart } from 'react-icons/fa';
+import image from '../../assets/img/logo-entel.png';
+import CartWidget from '../CartWidget/CartWidget';
+
 
 
 
@@ -24,8 +25,7 @@ function NavBar(){
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
                         className="me-auto my-2 my-lg-0"
-                        navbarScroll
-                    >
+                        navbarScroll>
                         <ul>
                             <li>
                                 <a href="#">Home</a>
@@ -35,11 +35,12 @@ function NavBar(){
                                 </li>
                             <li>
                                 <a href="#">Accesorios</a>
-                                </li>
+                            </li>
                             
                         </ul>
                     </Nav>
-                <Button variant="primary" className="me-5">Comprar <FaShoppingCart /></Button>{' '}
+                    <Button variant="outline-success">Search</Button>
+                    <CartWidget variant='primary' className='me-5 primary' text='Comprar'/>{' '}
             </Navbar.Collapse>
         </Container>
     </Navbar> 
