@@ -6,12 +6,12 @@ import { FaShoppingCart } from 'react-icons/fa';
 
 
 const CartWidget = (props) => {
-    const {variant, className, text} = props;
+    const {variant, text} = props;
 
    return (
         <>
-            <Button variant={{variant:variant}} className={{className: className}}>
-                {text ? text : 'default text'}<FaShoppingCart/>
+            <Button variant={{variant:variant}} className="btn btn-primary">
+                {text ? text : 'default text'}<FaShoppingCart />
             </Button>
         </>
    )  

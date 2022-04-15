@@ -1,6 +1,6 @@
 import React from 'react';
 //import Component from 'react'
-import {Navbar, Nav, Container, Button} from 'react-bootstrap';
+import {Navbar, Nav, Container} from 'react-bootstrap';
 import './NavBar.css';
 import image from '../../assets/img/logo-entel.png';
 import CartWidget from '../CartWidget/CartWidget';
@@ -39,8 +39,7 @@ function NavBar(){
                             
                         </ul>
                     </Nav>
-                    <Button variant="outline-success">Search</Button>
-                    <CartWidget variant='primary' className='me-5 primary' text='Comprar'/>{' '}
+                    <CartWidget variant='primary'  text='Comprar'/>{' '}
             </Navbar.Collapse>
         </Container>
     </Navbar> 
