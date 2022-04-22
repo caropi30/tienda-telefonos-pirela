@@ -16,9 +16,7 @@ const ItemCount = (props) => {
     };
 
     const handlerSubstract = () => {
-        if(count === props.stock ){
-           setCount(count - 1);
-        } else if (count > props.initial) {
+         if (count > props.initial) {
             setCount(count - 1);
         }
     };
