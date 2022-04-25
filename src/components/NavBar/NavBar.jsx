@@ -1,7 +1,7 @@
 import React from 'react';
 //import Component from 'react'
 import {Navbar, Nav, Container} from 'react-bootstrap';
-import './NavBar.css';
+import './NavBar.scss';
 import image from '../../assets/img/logo-entel.png';
 import CartWidget from '../CartWidget/CartWidget';
 

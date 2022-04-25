@@ -1,6 +1,7 @@
 import React from 'react';
-import './ItemListContainer.css';
+import './ItemListContainer.scss';
 import ItemCount from '../ItemCount/ItemCount';
+//import stockData from 'stockData.js'
 
 const ItemListContainer = (props) => {
    return(

@@ -1,4 +1,4 @@
-import "./ItemCount.css";
+import "./ItemCount.scss";
 import { Card, Button } from "react-bootstrap";
 import React, { useState } from "react";
 
@@ -6,7 +6,7 @@ const ItemCount = (props) => {
     const [count, setCount] = useState(props.initial);
 
     const onAdd = () => {
-        console.log('añadiste producto al carrito');
+        alert('añadiste producto al carrito');
     };
 
     const handlerAdd = () => {
