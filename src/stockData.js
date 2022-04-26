@@ -1,9 +1,9 @@
-export const stockData = [
+const stockData = [
   {
     id: 1,
     name: "iPhone 12",
     brand: "Apple",
-    image: "../assets/img/phones/apple/IPHONE_12.png",
+    image: "../../../assets/img/phones/apple/IPHONE_12.png",
     price: 0,
     stock: 5,
   },
@@ -48,7 +48,7 @@ export const stockData = [
     stock: 5,
   },
   {
-    id: 1,
+    id: 7,
     name: "iPhone 12",
     brand: "Apple",
     image: "../assets/img/phones/apple/IPHONE_12.png",
@@ -56,7 +56,7 @@ export const stockData = [
     stock: 5,
   },
   {
-    id: 2,
+    id: 8,
     name: "V20",
     brand: "Vivo",
     image: "../assets/img/phones/vivo/VIVO_V20.png",
@@ -64,7 +64,7 @@ export const stockData = [
     stock: 5,
   },
   {
-    id: 3,
+    id: 9,
     name: "K41s",
     brand: "LG",
     image: "../assets/img/phones/lg/K41S.png",
@@ -72,7 +72,7 @@ export const stockData = [
     stock: 5,
   },
   {
-    id: 4,
+    id: 10,
     name: "Galaxy S20",
     brand: "Samsung",
     image: "../assets/img/phones/samsung/GALAXY_S20.png",
@@ -80,7 +80,7 @@ export const stockData = [
     stock: 5,
   },
   {
-    id: 5,
+    id: 11,
     name: "Redmi Note 9",
     brand: "Xiaomi",
     image: "./assets/img/phones/xiaomi/REDMI_NOTE_9.png",
@@ -88,7 +88,7 @@ export const stockData = [
     stock: 5,
   },
   {
-    id: 6,
+    id: 12,
     name: "Nokia 2.3",
     brand: "Nokia",
     image: "../assets/img/phones/nokia/NOKIA_2-3.png",
@@ -96,3 +96,11 @@ export const stockData = [
     stock: 5,
   },
 ];
+
+const getStock = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve(stockData);
+  }, 2000);
+});
+
+export default getStock;

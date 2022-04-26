@@ -6,7 +6,7 @@ const ItemCount = (props) => {
     const [count, setCount] = useState(props.initial);
 
     const onAdd = () => {
-        alert('añadiste producto al carrito');
+        alert(`añadiste ${count} producto al carrito`);
     };
 
     const handlerAdd = () => {

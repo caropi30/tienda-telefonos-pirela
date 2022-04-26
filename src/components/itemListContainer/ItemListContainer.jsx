@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useState,useEffect } from 'react';
 import './ItemListContainer.scss';
-import ItemCount from '../ItemCount/ItemCount';
-//import stockData from 'stockData.js'
+import ItemList from '../../components/ItemList/ItemList'
+import getStock from './../../stockData'
+
 
 const ItemListContainer = (props) => {
-   return(
-    <>
-        <h1 className="title">{props.greeting}</h1>
-        <ItemCount variant="primary" stock={5} initial={1} />
-    </>
+    const [products, setProducts] = useState([]);
 
-   );
+    useEffect(() => {
+        getStock
+            .then((response) => setProducts(response))
+            .catch((error) => console.log(error))
+    });
+    return(
+        <>
+            <h1 className="title">{props.greeting}</h1>
+            <ItemList products={products}/>
+        </>
+
+    );
 }
 
 export default ItemListContainer;
