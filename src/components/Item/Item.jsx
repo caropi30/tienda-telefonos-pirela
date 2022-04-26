@@ -6,7 +6,7 @@ const Item = ({ id, brand, name, src, price, stock }) => {
   return (
     <>
       <Col className="my-3">
-        <Card key={id} stock={stock}>
+        <Card key={id} stock={stock} className="m-5">
           <Figure>
             <Card.Img variant="top" src={src} alt="Imagen de producto" className="w-100"/>
           </Figure>

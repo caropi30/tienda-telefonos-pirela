@@ -20,7 +20,7 @@ const ItemListContainer = (props) => {
             </div>
             <div className="row mt-5">
                 <div className="container">
-                    <div className="flex-wrap">
+                    <div className="container d-flex flex-wrap">
                         <ItemList products={products}/>  
                     </div>      
                 </div>
