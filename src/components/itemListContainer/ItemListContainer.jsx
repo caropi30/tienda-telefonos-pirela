@@ -11,7 +11,7 @@ const ItemListContainer = (props) => {
         getStock
             .then((response) => setProducts(response))
             .catch((error) => console.log(error))
-    });
+    },[]);
     return(
         <>
             <h1 className="title">{props.greeting}</h1>

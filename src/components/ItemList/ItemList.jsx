@@ -12,9 +12,9 @@ const ItemList = ({ products }) => {
             key={product.id}
             stock={product.stock}
             src={product.image}
-            title={product.name}
-            subtitle={product.brand}
-            text={product.price}
+            name={product.name}
+            brand={product.brand}
+            price={product.price}
           />
         );
       })}
