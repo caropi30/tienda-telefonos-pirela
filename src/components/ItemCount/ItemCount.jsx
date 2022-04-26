@@ -25,14 +25,14 @@ const ItemCount = (props) => {
         <>
         <Card.Body>
             <div className="d-flex">
-            <Button variant="outline-primary" onClick={handlerSubstract}>-</Button>{" "}
+            <Button variant="outline-primary" onClick={handlerSubstract} className="small" >-</Button>{" "}
             <p className="mx-4">{count}</p>
-            <Button variant="outline-primary" onClick={handlerAdd}>
+            <Button variant="outline-primary" onClick={handlerAdd} className="small" >
                 +
             </Button>{" "}
             </div>
             <div>
-            <Button variant="primary" onClick={onAdd}>
+            <Button variant="primary" onClick={onAdd} className="small" >
                 Añadir a carrito
             </Button>{" "}
             </div>

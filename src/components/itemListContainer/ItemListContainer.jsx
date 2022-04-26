@@ -14,8 +14,18 @@ const ItemListContainer = (props) => {
     },[]);
     return(
         <>
+        <main>
+            <div className="row">
             <h1 className="title">{props.greeting}</h1>
-            <ItemList products={products}/>
+            </div>
+            <div className="row mt-5">
+                <div className="container">
+                    <div className="flex-wrap">
+                        <ItemList products={products}/>  
+                    </div>      
+                </div>
+            </div>
+        </main>
         </>
 
     );
