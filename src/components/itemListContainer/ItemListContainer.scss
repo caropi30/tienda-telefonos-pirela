@@ -1,8 +1,90 @@
-.title {
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    padding-top: 3rem;
-    color: #0b34ff;
+// Extra small devices (landscape phones, 200px and up)
+@media (min-width: 200px) and (max-width: 575.98px) {
+    .title {
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        padding-top: 3rem;
+        color: #0b34ff;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .title {
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        padding-top: 3rem;
+        color: #0b34ff;
+    }
+
+    .cards-grid {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .title {
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        padding-top: 3rem;
+        color: #0b34ff;
+    }
+    
+    .cards-grid {
+        max-width: 740px;
+        margin: auto;
+        padding: 2.5rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .title {
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        padding-top: 3rem;
+        color: #0b34ff;
+    }
+
+    .cards-grid {
+        max-width: 960px;
+        margin: auto;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+    .title {
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        padding-top: 3rem;
+        color: #0b34ff;
+    }
+
+    .cards-grid {
+        max-width: 1150px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
 }

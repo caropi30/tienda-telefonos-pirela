@@ -20,8 +20,10 @@ const ItemListContainer = (props) => {
             </div>
             <div className="row mt-5">
                 <div className="container">
-                    <div className="container d-flex flex-wrap">
-                        <ItemList products={products}/>  
+                    <div className="row">
+                        <div className="cards-grid">
+                            <ItemList products={products}/>  
+                        </div>
                     </div>      
                 </div>
             </div>

@@ -15,7 +15,7 @@ function NavBar(){
         <Container fluid classNAme="d-flex justify-content-between">
             <Navbar.Brand href="#" className="d-flex">
                 <div className="brand d-flex align-items-center">
-                    <figure>
+                    <figure className="navbar-img">
                         <img src={image} alt="Entel Logo"/>
                     </figure>
                 </div>

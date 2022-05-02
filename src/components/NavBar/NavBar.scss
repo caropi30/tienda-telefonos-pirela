@@ -1,24 +1,148 @@
-figure {
-    width: 60px;
-  }
-  
-figure > img {
-    width: 100%;
-}
-  
-h1 {
-    font-size: 1rem;
+// Extra small devices (landscape phones, 200px and up)
+@media (min-width: 200px) and (max-width: 575.98px) {
+    .navbar-img {
+        width: 60px;
+
+        img {
+            width: 100%;
+        }
+    }
+    
+    h1 {
+        font-size: 1rem;
+    }
+    
+    ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    ul li {
+        list-style: none;
+        margin: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    a {
+        text-decoration: none;
+    }
 }
 
-ul {
-    display: flex;
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar-img {
+        width: 60px;
+    
+        img {
+            width: 100%;
+        }
+    }
+    
+    h1 {
+        font-size: 1rem;
+    }
+    
+    ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    ul li {
+        list-style: none;
+        margin: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    a {
+        text-decoration: none;
+    }
 }
 
-ul li {
-    list-style: none;
-    margin: 1rem;
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-img {
+        width: 60px;
+    
+        img {
+            width: 100%;
+        }
+    }
+    
+    h1 {
+        font-size: 1rem;
+    }
+    
+    ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    ul li {
+        list-style: none;
+        margin: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    a {
+        text-decoration: none;
+    }
 }
 
-a {
-    text-decoration: none;
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .navbar-img {
+        width: 60px;
+    }
+    
+    figure>img {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 1rem;
+    }
+    
+    ul {
+        display: flex;
+    }
+    
+    ul li {
+        list-style: none;
+        margin: 1rem;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .navbar-img{
+        width: 60px;
+    }
+    
+    figure>img {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 1rem;
+    }
+    
+    ul {
+        display: flex;
+    }
+    
+    ul li {
+        list-style: none;
+        margin: 1rem;
+    }
+    
+    a {
+        text-decoration: none;
+    }
 }
