@@ -39,7 +39,7 @@ function NavBar(){
                             
                         </ul>
                     </Nav>
-                    <CartWidget variant='primary'  text='Comprar'/>{' '}
+                    <CartWidget variant='primary'  text='Comprar' />{' '}
             </Navbar.Collapse>
         </Container>
     </Navbar> 
