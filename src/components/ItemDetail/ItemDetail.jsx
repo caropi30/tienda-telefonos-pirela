@@ -7,7 +7,7 @@ const ItemDetail = ({ id, brand, name, src, price, stock }) => {
   return (
     <>
       <Container className="my-1">
-        <Card key={id} stock={stock} className="m-2 card pt-2 d-flex">
+        <Card key={id} stock={stock} className="m-2 card pt-2">
           <Figure className="card-img">
             <Card.Img
               variant="top"
