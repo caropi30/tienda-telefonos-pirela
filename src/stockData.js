@@ -1,4 +1,4 @@
-const stockData = [
+const data = [
   {
     id: 1,
     name: "iPhone 12",
@@ -97,10 +97,10 @@ const stockData = [
   },
 ];
 
-const getStock = new Promise((resolve) => {
+const getData = new Promise((resolve) => {
   setTimeout(() => {
-    resolve(stockData);
+    resolve(data);
   }, 2000);
 });
 
-export default getStock;
+export default getData;

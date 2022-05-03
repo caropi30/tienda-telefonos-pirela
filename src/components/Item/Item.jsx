@@ -3,8 +3,6 @@ import './Item.scss';
 import { Col, Card, Figure, Button } from "react-bootstrap";
 
 
-
-
 const Item = ({ id, brand, name, src, price, stock }) => {
   return (
     <>
@@ -18,7 +16,7 @@ const Item = ({ id, brand, name, src, price, stock }) => {
             <Card.Text className="card-txt--brand">{brand}</Card.Text>
             <Card.Text className="card-txt--price">{price}</Card.Text>
           </Card.Body>
-           <Button variant="primary">Ver detalles</Button>
+           <Button variant="primary" key={id}>Ver detalles</Button>
         </Card>
       </Col>
     </>

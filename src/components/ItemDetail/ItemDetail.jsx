@@ -7,7 +7,7 @@ const ItemDetail = ({ id, brand, name, src, price, stock }) => {
   return (
     <>
       <Container className="my-1">
-        <Card key={id} stock={stock} className="m-2 card pt-2">
+        <Card key={id} stock={stock} className="m-2 card pt-2 d-flex">
           <Figure className="card-img">
             <Card.Img
               variant="top"
@@ -20,8 +20,8 @@ const ItemDetail = ({ id, brand, name, src, price, stock }) => {
             <Card.Title className="card-txt--name">{name}</Card.Title>
             <Card.Text className="card-txt--brand">{brand}</Card.Text>
             <Card.Text className="card-txt--price">{price}</Card.Text>
+            <ItemCount variant="primary" stock={stock} initial={1}/>
           </Card.Body>
-          <ItemCount variant="primary" stock={stock} initial={1} />
         </Card>
       </Container>
     </>

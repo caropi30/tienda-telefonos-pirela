@@ -12,7 +12,7 @@ import CartWidget from '../CartWidget/CartWidget';
 function NavBar(){
     return(
         <Navbar bg="light" expand="lg">
-        <Container fluid classNAme="d-flex justify-content-between">
+        <Container fluid className="d-flex justify-content-between">
             <Navbar.Brand href="#" className="d-flex">
                 <div className="brand d-flex align-items-center">
                     <figure className="navbar-img">

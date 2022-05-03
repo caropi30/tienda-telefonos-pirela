@@ -1,14 +1,14 @@
 import React, { useState,useEffect } from 'react';
 import './ItemListContainer.scss';
 import ItemList from '../../components/ItemList/ItemList'
-import getStock from './../../stockData'
+import getData from './../../stockData'
 
 
 const ItemListContainer = (props) => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        getStock
+        getData
             .then((response) => setProducts(response))
             .catch((error) => console.log(error))
     },[]);

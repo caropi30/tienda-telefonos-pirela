@@ -23,7 +23,7 @@ const ItemCount = (props) => {
 
   return (
     <>
-      <Card.Body class="card-body">
+      <Card.Body className="card-body">
         <div className="d-flex justify-content-center pb-3">
           <Button
             variant="outline-primary"
