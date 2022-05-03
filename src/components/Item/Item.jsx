@@ -1,13 +1,15 @@
 import React from "react";
 import './Item.scss';
-import { Col, Card, Figure } from "react-bootstrap";
-import ItemCount from "../ItemCount/ItemCount";
+import { Col, Card, Figure, Button } from "react-bootstrap";
+
+
+
 
 const Item = ({ id, brand, name, src, price, stock }) => {
   return (
     <>
       <Col className="my-1">
-        <Card key={id} stock={stock} className="m-2 card pt-2">
+        <Card key={id} stock={stock} className="m-3 card p-4 card">
           <Figure className="card-img">
             <Card.Img variant="top" src={src} alt="Imagen de producto" className="w-100"/>
           </Figure>
@@ -16,7 +18,7 @@ const Item = ({ id, brand, name, src, price, stock }) => {
             <Card.Text className="card-txt--brand">{brand}</Card.Text>
             <Card.Text className="card-txt--price">{price}</Card.Text>
           </Card.Body>
-          <ItemCount variant="primary" stock={stock} initial={1} />
+           <Button variant="primary">Ver detalles</Button>
         </Card>
       </Col>
     </>
