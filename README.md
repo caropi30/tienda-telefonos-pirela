@@ -1,4 +1,4 @@
-<figure align="center">    
+<figure style="text-align:center">    
     <img src="public/images/logo/puntos-logo.png" alt="Entel Logo" height="250">   
 </figure>
 
