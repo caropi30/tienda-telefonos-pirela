@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+<p align="center">
+  <p align="center">    
+    <img src="public/american.svg" alt="AmericanVintage" height="250">    
+  </p>
+  <p align="center">
+    Tienda Teléfonos Entel
+  </p>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Tienda Teléfonos Entel
 
-## Available Scripts
+E-commerce desarrollado en React, como tienda virtual de dispositvos smartphone para venta al público. Se utiliza tienda clon de Entel.
 
-In the project directory, you can run:
+\*Informo que no soy propietaria de la marca Entel, y su uso para este proyecto es exclusivamnete con fines educativos, que reflejan el uso de React Js como framework Front-End.
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> ![alt text](public/images/screens/navegacion.gif "Navegación")
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Funcionalidad del proyecto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Esta web muestra los productos a la venta, navegando por el catálogo a través de del filtrado de las categorías: Gama Alta, Gama Baja, Gama Media,
 
-### `npm run build`
+## Imágenes de la web
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+_Index_
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> ![picture alt](public/images/screens/pantalla-inicio.pnginicio.png "Pantalla inicio")
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+_Detalle de Producto_
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> ![picture alt](public/images/screens/pantalla-detalle.png "Pantalla detalle de producto")
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+<i class="icon-cog"></i>**##Dependencias del proyecto:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> - **React Icons:** https://react-icons.github.io/react-icons/
+> - **React Bootstrap:** https://react-bootstrap.github.io/ <i class="icon-upload"></i>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**<i class="icon-cog"> Navegabilidad / Componentes**
 
-### Code Splitting
+> - [x] Responsive / estilos aplicados de forma estética.
+> - [x] Manejo de imágenes.
+> - [x] camelCase para eventos.
+> - [x] PascalCase para componentes.
+> - [x] Routes y Links para navegaciones.
+> - [x] Navbar con botón de carrito implementado.
+> - [x] Promises y Hooks.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
