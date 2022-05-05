@@ -39,12 +39,12 @@ _Detalle de Producto_
 
 ---
 
-**##Dependencias del proyecto:**
+**Dependencias del proyecto:**
 
 > - **React Icons:** https://react-icons.github.io/react-icons/
 > - **React Bootstrap:** https://react-bootstrap.github.io/ <i class="icon-upload"></i>
 
-**<i class="icon-cog"> Navegabilidad / Componentes**
+**Navegabilidad / Componentes**
 
 > - [x] Responsive / estilos aplicados de forma estética.
 > - [x] Manejo de imágenes.
