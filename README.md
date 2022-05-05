@@ -1,6 +1,6 @@
 <p align="center">
   <p align="center">    
-    <img src="public/american.svg" alt="AmericanVintage" height="250">    
+    <img src="public/logo/puntos-logo.png" alt="Entel Logo" height="250">    
   </p>
   <p align="center">
     Tienda Teléfonos Entel
@@ -21,15 +21,13 @@ E-commerce desarrollado en React, como tienda virtual de dispositvos smartphone 
 
 ## Funcionalidad del proyecto
 
-## Esta web muestra los productos a la venta, navegando por el catálogo a través de del filtrado de las categorías: Gama Alta, Gama Baja, Gama Media,
-
-## Imágenes de la web
+Esta web muestra los productos a la venta, navegando por el catálogo a través de del filtrado de las categorías: Gama Alta, Gama Baja, Gama Media.
 
 ---
 
 _Index_
 
-> ![picture alt](public/images/screens/pantalla-inicio.pnginicio.png "Pantalla inicio")
+> ![picture alt](public/images/screens/pantalla-inicio.png "Pantalla inicio")
 
 ---
 
@@ -41,7 +39,7 @@ _Detalle de Producto_
 
 ---
 
-<i class="icon-cog"></i>**##Dependencias del proyecto:**
+**##Dependencias del proyecto:**
 
 > - **React Icons:** https://react-icons.github.io/react-icons/
 > - **React Bootstrap:** https://react-bootstrap.github.io/ <i class="icon-upload"></i>
