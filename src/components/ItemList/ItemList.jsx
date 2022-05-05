@@ -6,10 +6,9 @@ const ItemList = ({ products }) => {
   return (
     <>
       {products.map((product) => {
-          console.log(product.name);
         return (
           <Item
-            key={product.id}
+            id={product.id}
             stock={product.stock}
             src={product.image}
             name={product.name}

@@ -4,6 +4,7 @@ import {Navbar, Nav, Container} from 'react-bootstrap';
 import './NavBar.scss';
 import image from '../../assets/img/logo-entel.png';
 import CartWidget from '../CartWidget/CartWidget';
+import { NavLink } from "react-router-dom";
 
 
 
@@ -15,9 +16,11 @@ function NavBar(){
         <Container fluid className="d-flex justify-content-between">
             <Navbar.Brand href="#" className="d-flex">
                 <div className="brand d-flex align-items-center">
-                    <figure className="navbar-img">
+                    <NavLink to="/">
+                        <figure className="navbar-img">
                         <img src={image} alt="Entel Logo"/>
                     </figure>
+                    </NavLink>
                 </div>
                 
             </Navbar.Brand>
@@ -28,15 +31,17 @@ function NavBar(){
                         navbarScroll>
                         <ul>
                             <li>
-                                <a href="#">Home</a>
-                                </li>
-                            <li>
-                                <a href="#">Equipos</a>
-                                </li>
-                            <li>
-                                <a href="#">Accesorios</a>
+                               <NavLink to="/">Home</NavLink>
                             </li>
-                            
+                            <li>
+                                <NavLink to="/category/gama-alta">Gama Alta</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/category/gama-media">Gama Media</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/category/gama-baja">Gama Baja</NavLink>
+                            </li>                            
                         </ul>
                     </Nav>
                     <CartWidget variant='primary'  text='Comprar' />{' '}

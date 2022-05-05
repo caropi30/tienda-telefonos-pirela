@@ -1,17 +1,34 @@
 import React, { useState,useEffect } from 'react';
+import { useParams } from "react-router-dom";
 import './ItemListContainer.scss';
 import ItemList from '../../components/ItemList/ItemList'
-import getData from './../../stockData'
+import data from '../../stockData'
+
+
+
+function getData(category) {
+  const dataPromise = new Promise((resolve) => {
+      const categoryFilter =  category ? data.filter(item => item.category === category): data;
+        setTimeout(() => {
+        resolve(categoryFilter);
+        }, 2000);
+  })
+
+  return dataPromise;
+}
 
 
 const ItemListContainer = (props) => {
     const [products, setProducts] = useState([]);
+    const {categoryId} = useParams();
 
     useEffect(() => {
-        getData
+        console.log(categoryId);
+        getData(categoryId)
             .then((response) => setProducts(response))
             .catch((error) => console.log(error))
-    },[]);
+    },[categoryId]);
+
     return(
         <>
         <main>
