@@ -1,6 +1,6 @@
 <p align="center">
   <p align="center">    
-    <img src="public/images/logo/puntos-entel.ong" alt="Entel Logo" height="250">    
+    <img src="public/images/logo/puntos-entel.png" alt="Entel Logo" height="250">    
   </p>
   <p align="center">
     Tienda Teléfonos Entel
