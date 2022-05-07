@@ -40,6 +40,7 @@ _Detalle de Producto_
 
 > - **React Icons:** https://react-icons.github.io/react-icons/
 > - **React Bootstrap:** https://react-bootstrap.github.io/ <i class="icon-upload"></i>
+> - **Sass:** https://create-react-app.dev/docs/adding-a-sass-stylesheet/
 
 **Navegabilidad / Componentes**
 
