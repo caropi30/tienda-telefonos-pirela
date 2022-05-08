@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import './ItemListContainer.scss';
 import ItemList from '../../components/ItemList/ItemList'
 import data from '../../stockData';
-import ItemListCarousel from '../../components/ItemListCarousel/ItemListContainerCarousel'
+//import ItemListCarousel from '../../components/ItemListCarousel/ItemListContainerCarousel'
 
 
 
@@ -35,7 +35,7 @@ const ItemListContainer = (props) => {
         <>
         <main>
             <div className="row">
-                <ItemListCarousel />
+                {/*<ItemListCarousel />*/}
             </div>
             <div className="row">
             <h1 className="title">{props.greeting}</h1>
