@@ -2,6 +2,7 @@ import React from 'react';
 import './CartWidget.scss';
 import {Button} from 'react-bootstrap';
 import { FaShoppingCart } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 
 
@@ -11,7 +12,7 @@ const CartWidget = (props) => {
    return (
         <>
             <Button variant={{variant:variant}} className="btn btn-primary">
-                {text ? text : 'default text'}<FaShoppingCart />
+                <Link to={"/cart/"} className="catalogue-card--btnDetail-link">{text ? text : 'default text'}<FaShoppingCart /></Link>
             </Button>
         </>
    )  

@@ -1,6 +1,7 @@
 import "./ItemCount.scss";
 import { Card, Button } from "react-bootstrap";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ItemCount = (props) => {
   const [count, setCount] = useState(props.initial);
@@ -43,7 +44,7 @@ const ItemCount = (props) => {
         </div>
         <div>
           <Button variant="primary" onClick={onAdd} className="small">
-            Agrega al carro
+            <Link to={"/cart/"} className="catalogue-card--btnDetail-link">Agrega a carrito</Link>
           </Button>{" "}
         </div>
       </Card.Body>
