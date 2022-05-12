@@ -1,23 +1,20 @@
 import "./ItemCount.scss";
 import { Card, Button } from "react-bootstrap";
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, {useState} from "react";
 
-const ItemCount = (props) => {
-  const [count, setCount] = useState(props.initial);
 
-  const onAdd = () => {
-    alert(`añadiste ${count} producto al carrito`);
-  };
+const ItemCount = ({variant, stock, initial, onAdd}) => {
+  const [count, setCount] = useState(initial);
 
+  
   const handlerAdd = () => {
-    if (count < props.stock) {
+    if (count < stock) {
       setCount(count + 1);
     }
   };
 
   const handlerSubstract = () => {
-    if (count > props.initial) {
+    if (count > initial) {
       setCount(count - 1);
     }
   };
@@ -43,8 +40,8 @@ const ItemCount = (props) => {
           </Button>{" "}
         </div>
         <div>
-          <Button variant="primary" onClick={onAdd} className="small">
-            <Link to={"/cart/"} className="catalogue-card--btnDetail-link">Agrega a carrito</Link>
+          <Button variant="primary" onClick={() => onAdd(count)} className="small">
+            Agregar a carrito
           </Button>{" "}
         </div>
       </Card.Body>

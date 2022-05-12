@@ -87,4 +87,9 @@
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
     }
+
+    .carousel {
+        max-width: 1150px;
+        margin: auto;
+    }
 }

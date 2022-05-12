@@ -12,7 +12,7 @@ import Cart from './pages/Cart/Cart';
 function App() {
   return (
     <div className="App">
-      {<NavBar />}
+      <NavBar />
       <Routes>
         <Route path='/' element={<ItemListContainer greeting='Welcome to my shop' />} />
         <Route path='/cart' element={<Cart / >} />

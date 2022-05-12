@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ItemDetail.scss";
-import { Container, Card, Figure } from "react-bootstrap";
+import { Container, Card, Figure, Button } from "react-bootstrap";
 import ItemCount from "../ItemCount/ItemCount";
+import { BsFillBagCheckFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const ItemDetail = (product) => {
   const { name, brand, src, price, stock } = product;
+
+  const [productQuantity, setProductQuantity] = useState(0);
+
+  const addToCart = (productQuantityToAdd) => {
+    setProductQuantity(productQuantityToAdd);
+  };
 
   return (
     <>
@@ -21,8 +29,25 @@ const ItemDetail = (product) => {
           <Card.Body className="card-detail--txt">
             <Card.Title className="card-detail--txt-name">{name}</Card.Title>
             <Card.Text className="card-detail--txt-brand">{brand}</Card.Text>
-            <Card.Text className="card-detail--txt-price">${price} CLP</Card.Text>
-            <ItemCount variant="primary" stock={stock} initial={1} />
+            <Card.Text className="card-detail--txt-price">
+              ${price} CLP
+            </Card.Text>
+            <div>
+              {productQuantity ? (
+                <Link to={"/cart/"} className="catalogue-card--btnDetail-link">
+                  <Button variant="primary" className="small">
+                    <BsFillBagCheckFill /> Finalizar compra ({productQuantity} items) {" "}
+                  </Button>{" "}
+                </Link>
+              ) : (
+                <ItemCount
+                  variant="primary"
+                  stock={stock}
+                  initial={1}
+                  onAdd={addToCart}
+                />
+              )}
+            </div>
           </Card.Body>
         </Card>
       </Container>

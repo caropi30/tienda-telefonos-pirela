@@ -37,9 +37,9 @@ const ItemListContainer = (props) => {
             <div className="row">
                 <ItemListCarousel  className="container"/>
             </div>
-            <div className="row">
-            {/*<h1 className="title">{props.greeting}</h1>*/}
-            </div>
+            {/*<<div className="row">
+            <h1 className="title">{props.greeting}</h1>
+            </div>*/}
             <div className="row mt-5">
                 <div className="container">
                     <div className="row">

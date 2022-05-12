@@ -8,17 +8,17 @@ const ItemListContainerCarousel = () => {
   return (
     <>
       <Carousel className="text-center p-4">
-        <Carousel.Item interval={1000}>
+        <Carousel.Item interval={4000}>
           <Figure>
             <img className="d-block w-100" src={desk1} alt="First slide" />
           </Figure>
         </Carousel.Item>
-        <Carousel.Item interval={1000}>
+        <Carousel.Item interval={4000}>
           <Figure>
             <img className="d-block w-100" src={desk2} alt="Second slide" />
           </Figure>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval={4000}>
           <Figure>
             <img className="d-block w-100" src={desk3} alt="Third slide" />
           </Figure>

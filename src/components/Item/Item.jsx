@@ -9,24 +9,31 @@ const Item = (product) => {
   return (
     <>
       <Col className="my-1">
-        <Card id={id} stock={stock} className="m-3 catalogue-card p-4 card">
-          <Figure className="catalogue-card--img">
-            <Card.Img
-              variant="top"
-              src={src}
-              alt="Imagen de producto"
-              className="w-100"
-            />
-          </Figure>
-          <Card.Body className="catalogue-card--txt">
-            <Card.Title className="catalogue-card--txt-name">{name}</Card.Title>
-            <Card.Text className="catalogue-card--txt-brand">{brand}</Card.Text>
-            <Card.Text className="catalogue-card--txt-price">${price} CLP</Card.Text>
-          </Card.Body>
-          <Button className="catalogue-card--btn-detail">
-            <Link to={"/item/" + id} className="catalogue-card--btnDetail-link">Ver detalles</Link>
-          </Button>
-        </Card>
+        <Link to={"/item/" + id}>
+          <Card id={id} stock={stock} className="m-3 catalogue-card p-4 card">
+            <Figure className="catalogue-card--img">
+              <Card.Img
+                variant="top"
+                src={src}
+                alt="Imagen de producto"
+                className="w-100"
+              />
+            </Figure>
+            <Card.Body className="catalogue-card--txt">
+              <Card.Title className="catalogue-card--txt-name">
+                {name}
+              </Card.Title>
+              <Card.Text className="catalogue-card--txt-brand">
+                {brand}
+              </Card.Text>
+              {/*<Card.Text className="catalogue-card--txt-price">${price} CLP</Card.Text>*/}
+            </Card.Body>
+            <Button className="catalogue-card--btn-detail">
+              {/*<Link to={"/item/" + id} className="catalogue-card--btnDetail-link">Ver detalles</Link>*/}
+              Ver detalles
+            </Button>
+          </Card>
+        </Link>
       </Col>
     </>
   );
