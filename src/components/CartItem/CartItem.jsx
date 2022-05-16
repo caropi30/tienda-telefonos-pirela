@@ -2,7 +2,7 @@ import React from "react";
 import "./CartItem.scss";
 import { Row, Card, Figure, Button, CloseButton } from "react-bootstrap";
 
-const CartItem = (product) => {
+const CartItem = ({ product }) => {
   return (
     <>
       <Row className="my-1">
