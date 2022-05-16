@@ -1,16 +1,23 @@
 import React from "react";
 import "./Cart.scss";
-import { MdConstruction } from "react-icons/md";
+import { useCartContext } from "../../context/CartContextProvider";
+import CartItem from "../../components/CartItem/CartItem";
+import { Container, Button } from "react-bootstrap";
 
 const Cart = () => {
-    return(
-        <>
-            <div className="text-center">
-                <h1 className="title">Hola soy un carrito en construcción</h1>
-                <MdConstruction/>
-            </div>
-        </>
-    )
+  const { cartList, emptyCart } = useCartContext();
+  console.log(cartList);
+
+  return (
+    <>
+      <Container>
+        {cartList.map((product) => (
+          <CartItem key={product.id} id={product.id} product={product} />
+        ))}
+        <Button onClick={() => emptyCart()}>Vaciar carrito</Button>
+      </Container>
+    </>
+  );
 };
 
 export default Cart;

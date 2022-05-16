@@ -4,13 +4,13 @@ import "./Item.scss";
 import { Col, Card, Figure, Button } from "react-bootstrap";
 
 const Item = (product) => {
-  const { id, name, brand, src, price, stock } = product;
+  const { id, name, brand, src, stock } = product;
 
   return (
     <>
       <Col className="my-1">
         <Link to={"/item/" + id}>
-          <Card id={id} stock={stock} className="m-3 catalogue-card p-4 card">
+          <Card key={id} stock={stock} className="m-3 catalogue-card p-4 card">
             <Figure className="catalogue-card--img">
               <Card.Img
                 variant="top"
@@ -26,12 +26,8 @@ const Item = (product) => {
               <Card.Text className="catalogue-card--txt-brand">
                 {brand}
               </Card.Text>
-              {/*<Card.Text className="catalogue-card--txt-price">${price} CLP</Card.Text>*/}
             </Card.Body>
-            <Button className="catalogue-card--btn-detail">
-              {/*<Link to={"/item/" + id} className="catalogue-card--btnDetail-link">Ver detalles</Link>*/}
-              Ver detalles
-            </Button>
+            <Button className="catalogue-card--btn-detail">Ver detalles</Button>
           </Card>
         </Link>
       </Col>

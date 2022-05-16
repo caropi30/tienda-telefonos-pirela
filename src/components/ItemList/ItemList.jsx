@@ -1,6 +1,5 @@
 import React from "react";
-import Item from '../../components/Item/Item'
-
+import Item from "../../components/Item/Item";
 
 const ItemList = ({ products }) => {
   return (
@@ -14,6 +13,7 @@ const ItemList = ({ products }) => {
             name={product.name}
             brand={product.brand}
             price={product.price}
+            key={product.id}
           />
         );
       })}

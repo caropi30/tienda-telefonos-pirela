@@ -4,20 +4,24 @@ import { Container, Card, Figure, Button } from "react-bootstrap";
 import ItemCount from "../ItemCount/ItemCount";
 import { BsFillBagCheckFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { useCartContext } from "../../context/CartContextProvider";
 
 const ItemDetail = (product) => {
-  const { name, brand, src, price, stock } = product;
+  const { id, name, brand, src, price, stock } = product;
 
   const [productQuantity, setProductQuantity] = useState(0);
 
-  const addToCart = (productQuantityToAdd) => {
+  const { addToCart } = useCartContext();
+
+  const addToShoppingCart = (productQuantityToAdd) => {
     setProductQuantity(productQuantityToAdd);
+    addToCart(product, productQuantityToAdd);
   };
 
   return (
     <>
       <Container className="my-1">
-        <Card stock={stock} className="m-2 card-detail p-3 mt-3">
+        <Card key={id} stock={stock} className="m-2 card-detail p-3 mt-3">
           <Figure className="card-detail--img">
             <Card.Img
               variant="top"
@@ -36,7 +40,8 @@ const ItemDetail = (product) => {
               {productQuantity ? (
                 <Link to={"/cart/"} className="catalogue-card--btnDetail-link">
                   <Button variant="primary" className="small">
-                    <BsFillBagCheckFill /> Finalizar compra ({productQuantity} items) {" "}
+                    <BsFillBagCheckFill /> Finalizar compra ({productQuantity}{" "}
+                    items){" "}
                   </Button>{" "}
                 </Link>
               ) : (
@@ -44,7 +49,7 @@ const ItemDetail = (product) => {
                   variant="primary"
                   stock={stock}
                   initial={1}
-                  onAdd={addToCart}
+                  onAdd={addToShoppingCart}
                 />
               )}
             </div>
