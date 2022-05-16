@@ -1,8 +1,11 @@
 import React from "react";
 import "./CartItem.scss";
-import { Row, Card, Figure, Button, CloseButton } from "react-bootstrap";
+import { Row, Card, Figure, Button } from "react-bootstrap";
+import { useCartContext } from "../../context/CartContextProvider";
 
 const CartItem = ({ product }) => {
+  const { deleteByID } = useCartContext();
+
   return (
     <>
       <Row className="my-1">
@@ -10,10 +13,9 @@ const CartItem = ({ product }) => {
           key={product.id}
           id={product.id}
           stock={product.stock}
-          className="m-3 p-4 card d-flex"
+          className="m-3 p-4 card cart-card"
         >
-          <CloseButton className="text-end" />
-          <Figure className="">
+          <Figure className="cart-card--img">
             <Card.Img
               variant="top"
               src={product.src}
@@ -22,11 +24,22 @@ const CartItem = ({ product }) => {
             />
           </Figure>
 
-          <Card.Body className="">
-            <Card.Title className="">{product.name}</Card.Title>
-
-            <Card.Text className="">{product.brand}</Card.Text>
-            <Card.Text className="">${product.price} CLP</Card.Text>
+          <Card.Body className="cart-card--txt">
+            <Card.Text className="cart-card--txt-brand">
+              {product.brand}
+            </Card.Text>
+            <Card.Title className="cart-card--txt-name">
+              {product.name}
+            </Card.Title>
+            <Card.Text className="cart-card--txt-brand">
+              ${product.price} CLP
+            </Card.Text>
+            <Card.Text className="cart-card--txt-brand">
+              Unidades: {product.quantity}
+            </Card.Text>
+            <div>
+              <Button onClick={() => deleteByID(product.id)}>Eliminar</Button>
+            </div>
           </Card.Body>
         </Card>
       </Row>

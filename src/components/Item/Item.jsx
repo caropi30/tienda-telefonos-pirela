@@ -20,12 +20,12 @@ const Item = (product) => {
               />
             </Figure>
             <Card.Body className="catalogue-card--txt">
-              <Card.Title className="catalogue-card--txt-name">
-                {name}
-              </Card.Title>
               <Card.Text className="catalogue-card--txt-brand">
                 {brand}
               </Card.Text>
+              <Card.Title className="catalogue-card--txt-name">
+                {name}
+              </Card.Title>
             </Card.Body>
             <Button className="catalogue-card--btn-detail">Ver detalles</Button>
           </Card>
