@@ -36,6 +36,7 @@ const ItemDetail = (product) => {
             <Card.Text className="card-detail--txt-price">
               ${price} CLP
             </Card.Text>
+
             <div>
               {productQuantity ? (
                 <Link to={"/cart/"} className="catalogue-card--btnDetail-link">

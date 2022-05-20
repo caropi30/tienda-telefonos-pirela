@@ -4,7 +4,7 @@ import { Row, Card, Figure, Button } from "react-bootstrap";
 import { useCartContext } from "../../context/CartContextProvider";
 
 const CartItem = ({ product }) => {
-  const { deleteByID } = useCartContext();
+  const { deleteByID, removeUnit } = useCartContext();
 
   return (
     <>
@@ -32,12 +32,16 @@ const CartItem = ({ product }) => {
               {product.name}
             </Card.Title>
             <Card.Text className="cart-card--txt-brand">
-              ${product.price} CLP
-            </Card.Text>
-            <Card.Text className="cart-card--txt-brand">
               Unidades: {product.quantity}
             </Card.Text>
+            <Card.Text className="cart-card--txt-brand">
+              Precio por unidad: ${product.price} CLP
+            </Card.Text>
+
             <div>
+              <Button className="me-2" onClick={() => removeUnit(product.id)}>
+                Eliminar unidad
+              </Button>
               <Button onClick={() => deleteByID(product.id)}>Eliminar</Button>
             </div>
           </Card.Body>

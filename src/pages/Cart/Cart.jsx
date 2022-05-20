@@ -13,24 +13,31 @@ const Cart = () => {
   return (
     <>
       <Container>
-        {cartList.map((product) => (
-          <CartItem key={product.id} id={product.id} product={product} />
-        ))}
-        {cartList.length > 0 ? (
-          <>
-            <Button className="btn-empty" onClick={() => emptyCart()}>
-              Vaciar carrito
-            </Button>
-          </>
-        ) : (
-          <>
-            <h1>El carrito está vacío </h1>
-            <MdProductionQuantityLimits />
-          </>
-        )}
-        <Link to={"./checkout"}>
-          <Button className="btn-empty">Finalizar compra</Button>
-        </Link>
+        <div>
+          {cartList.map((product) => (
+            <CartItem key={product.id} id={product.id} product={product} />
+          ))}
+          {cartList.length > 0 ? (
+            <>
+              <div className="d-flex flex-column text-end">
+                <h4 classNAme="my-3">Total: ${totalPrice()} CLP</h4>
+                <div className="">
+                  <Button className="btn-empty " onClick={() => emptyCart()}>
+                    Vaciar carrito
+                  </Button>
+                  <Link to={"./checkout"}>
+                    <Button className="btn-empty ms-3">Finalizar compra</Button>
+                  </Link>
+                </div>
+              </div>
+            </>
+          ) : (
+            <>
+              <h1>El carrito está vacío </h1>
+              <MdProductionQuantityLimits />
+            </>
+          )}
+        </div>
       </Container>
     </>
   );

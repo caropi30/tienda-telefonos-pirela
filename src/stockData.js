@@ -5,7 +5,7 @@ const data = [
     brand: "Apple",
     category: "gama-alta",
     image: "../images/apple/IPHONE_12.png",
-    price: "803.760",
+    price: 803760,
     stock: 18,
     description: {
       screen: "Pantalla 6,1 OLED Súper Retina XDR",
@@ -20,7 +20,7 @@ const data = [
     brand: "Vivo",
     category: "gama-media",
     image: "../images/vivo/VIVO_V20.png",
-    price: "431.760",
+    price: 431760,
     stock: 25,
     description: {
       screen: "Pantalla 6,1 OLED Súper Retina XDR",
@@ -35,7 +35,7 @@ const data = [
     brand: "Xiaomi",
     category: "gama-alta",
     image: "../images/xiaomi/XIAOMI_MI_10T_PRO.png",
-    price: "635.760",
+    price: 635760,
     stock: 50,
     description: {
       screen: "Pantalla 6,1 OLED Súper Retina XDR",
@@ -50,7 +50,7 @@ const data = [
     brand: "Samsung",
     category: "gama-alta",
     image: "../images/samsung/GALAXY_S20.png",
-    price: "647.760",
+    price: 647760,
     stock: 27,
     description: {
       screen: "Pantalla 6,1 OLED Súper Retina XDR",
@@ -65,7 +65,7 @@ const data = [
     brand: "Xiaomi",
     category: "gama-media",
     image: "../images/xiaomi/REDMI_NOTE_9.png",
-    price: "227.760",
+    price: 227760,
     stock: 28,
     description: {
       screen: "Pantalla 6,1 OLED Súper Retina XDR",
@@ -80,7 +80,7 @@ const data = [
     brand: "Nokia",
     category: "gama-baja",
     image: "../images/nokia/NOKIA_2-3.png",
-    price: "119.760",
+    price: 119760,
     stock: 5,
     description: {
       screen: "Pantalla 6,1 OLED Súper Retina XDR",
@@ -95,7 +95,7 @@ const data = [
     brand: "Apple",
     category: "gama-media",
     image: "../images/apple/IPHONE_SE.png",
-    price: "227.760",
+    price: 227760,
     stock: 5,
     description: {
       screen: "Pantalla 6,1 OLED Súper Retina XDR",
@@ -110,7 +110,7 @@ const data = [
     brand: "Vivo",
     category: "gama-baja",
     image: "../images/vivo/VIVO_Y11S.png",
-    price: "83.760",
+    price: 83760,
     stock: 43,
     description: {
       screen: "Pantalla 6,1 OLED Súper Retina XDR",
@@ -125,7 +125,7 @@ const data = [
     brand: "LG",
     category: "gama-alta",
     image: "../images/lg/LG_VELVET.png",
-    price: "419.760",
+    price: 419760,
     stock: 49,
     description: {
       screen: "Pantalla 6,1 OLED Súper Retina XDR",
@@ -140,7 +140,7 @@ const data = [
     brand: "Samsung",
     category: "gama-alta",
     image: "../images/samsung/GALAXY_S21_ULTRA.png",
-    price: "1.199.760",
+    price: 1199760,
     stock: 5,
     description: {
       screen: "Pantalla 6,1 OLED Súper Retina XDR",
@@ -155,7 +155,7 @@ const data = [
     brand: "LG",
     category: "gama-baja",
     image: "../images/lg/K41S.png",
-    price: "167.760",
+    price: 167760,
     stock: 15,
     description: {
       screen: "Pantalla 6,1 OLED Súper Retina XDR",
@@ -170,7 +170,7 @@ const data = [
     brand: "Nokia",
     category: "gama-baja",
     image: "../images/nokia/NOKIA_6-2.png",
-    price: "131.760",
+    price: 131760,
     stock: 36,
     description: {
       screen: "Pantalla 6,1 OLED Súper Retina XDR",

@@ -37,11 +37,28 @@ const CartContextProvider = ({ children }) => {
   };
 
   const totalPrice = () => {
-    return cartList.reduce((total, item) => total + item.quantity * item.price);
+    return cartList.reduce(
+      (total, item) => total + item.quantity * item.price,
+      0
+    );
   };
 
   const unitsPerProduct = (id) => {
     return cartList.find((item) => item.id === id).quantity;
+  };
+
+  const removeUnit = (id) => {
+    if (!unitsPerProduct(id) === 1) {
+      return deleteByID(id);
+    } else {
+      setCartList(
+        cartList.map((product) =>
+          id === product.id
+            ? { ...product, quantity: product.quantity - 1 }
+            : product
+        )
+      );
+    }
   };
 
   return (
@@ -54,6 +71,7 @@ const CartContextProvider = ({ children }) => {
         totalCount,
         totalPrice,
         unitsPerProduct,
+        removeUnit,
       }}
     >
       {children}
