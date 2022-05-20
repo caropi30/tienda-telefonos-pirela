@@ -40,7 +40,7 @@ const ItemDetail = (product) => {
               {productQuantity ? (
                 <Link to={"/cart/"} className="catalogue-card--btnDetail-link">
                   <Button variant="primary" className="small">
-                    <BsFillBagCheckFill /> Finalizar compra ({productQuantity}{" "}
+                    <BsFillBagCheckFill /> Ir a carrito ({productQuantity}{" "}
                     items){" "}
                   </Button>{" "}
                 </Link>

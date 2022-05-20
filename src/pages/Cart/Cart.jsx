@@ -4,6 +4,7 @@ import { useCartContext } from "../../context/CartContextProvider";
 import CartItem from "../../components/CartItem/CartItem";
 import { Container, Button } from "react-bootstrap";
 import { MdProductionQuantityLimits } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { cartList, emptyCart, totalPrice } = useCartContext();
@@ -27,6 +28,9 @@ const Cart = () => {
             <MdProductionQuantityLimits />
           </>
         )}
+        <Link to={"./checkout"}>
+          <Button className="btn-empty">Finalizar compra</Button>
+        </Link>
       </Container>
     </>
   );
