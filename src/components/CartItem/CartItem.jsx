@@ -4,7 +4,7 @@ import { Row, Card, Figure, Button } from "react-bootstrap";
 import { useCartContext } from "../../context/CartContextProvider";
 
 const CartItem = ({ product }) => {
-  const { deleteByID, removeUnit } = useCartContext();
+  const { deleteByID } = useCartContext();
 
   return (
     <>
@@ -39,9 +39,6 @@ const CartItem = ({ product }) => {
             </Card.Text>
 
             <div>
-              <Button className="me-2" onClick={() => removeUnit(product.id)}>
-                Eliminar unidad
-              </Button>
               <Button onClick={() => deleteByID(product.id)}>Eliminar</Button>
             </div>
           </Card.Body>

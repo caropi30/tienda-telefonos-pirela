@@ -1,7 +1,7 @@
 const data = [
   {
     id: 1,
-    name: "iPhone 12",
+    name: "MOCK - iPhone 12",
     brand: "Apple",
     category: "gama-alta",
     image: "../images/apple/IPHONE_12.png",
@@ -16,7 +16,7 @@ const data = [
   },
   {
     id: 2,
-    name: "V20",
+    name: "MOCK - V20",
     brand: "Vivo",
     category: "gama-media",
     image: "../images/vivo/VIVO_V20.png",
@@ -31,7 +31,7 @@ const data = [
   },
   {
     id: 3,
-    name: "Mi 10T Pro",
+    name: "MOCK - Mi 10T Pro",
     brand: "Xiaomi",
     category: "gama-alta",
     image: "../images/xiaomi/XIAOMI_MI_10T_PRO.png",
@@ -46,7 +46,7 @@ const data = [
   },
   {
     id: 4,
-    name: "Galaxy S20",
+    name: "MOCK - Galaxy S20",
     brand: "Samsung",
     category: "gama-alta",
     image: "../images/samsung/GALAXY_S20.png",
@@ -61,7 +61,7 @@ const data = [
   },
   {
     id: 5,
-    name: "Redmi Note 9",
+    name: "MOCK - Redmi Note 9",
     brand: "Xiaomi",
     category: "gama-media",
     image: "../images/xiaomi/REDMI_NOTE_9.png",
@@ -76,7 +76,7 @@ const data = [
   },
   {
     id: 6,
-    name: "Nokia 2.3",
+    name: "MOCK - Nokia 2.3",
     brand: "Nokia",
     category: "gama-baja",
     image: "../images/nokia/NOKIA_2-3.png",
@@ -91,7 +91,7 @@ const data = [
   },
   {
     id: 7,
-    name: "iPhone SE",
+    name: "MOCK - iPhone SE",
     brand: "Apple",
     category: "gama-media",
     image: "../images/apple/IPHONE_SE.png",
@@ -106,7 +106,7 @@ const data = [
   },
   {
     id: 8,
-    name: "Y11s",
+    name: "MOCK - Y11s",
     brand: "Vivo",
     category: "gama-baja",
     image: "../images/vivo/VIVO_Y11S.png",
@@ -121,7 +121,7 @@ const data = [
   },
   {
     id: 9,
-    name: "Velvet",
+    name: "MOCK - Velvet",
     brand: "LG",
     category: "gama-alta",
     image: "../images/lg/LG_VELVET.png",
@@ -136,7 +136,7 @@ const data = [
   },
   {
     id: 10,
-    name: "Galaxy S21 Ultra",
+    name: "MOCK - Galaxy S21 Ultra",
     brand: "Samsung",
     category: "gama-alta",
     image: "../images/samsung/GALAXY_S21_ULTRA.png",
@@ -151,7 +151,7 @@ const data = [
   },
   {
     id: 11,
-    name: "K41",
+    name: "MOCK - K41",
     brand: "LG",
     category: "gama-baja",
     image: "../images/lg/K41S.png",
@@ -166,7 +166,7 @@ const data = [
   },
   {
     id: 12,
-    name: "Nokia 6.2",
+    name: "MOCK - Nokia 6.2",
     brand: "Nokia",
     category: "gama-baja",
     image: "../images/nokia/NOKIA_6-2.png",
