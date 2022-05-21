@@ -8,7 +8,6 @@ import ItemDetailContainer from "./pages/ItemDetailContainer/ItemDetailContainer
 import Cart from "./pages/Cart/Cart";
 import CartContextProvider from "./context/CartContextProvider";
 import Checkout from "./components/Checkout/Checkout";
-import { initializeApp } from "firebase/app";
 
 function App() {
   return (
