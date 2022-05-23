@@ -25,7 +25,7 @@ const Cart = () => {
                   <Button className="btn-empty " onClick={() => emptyCart()}>
                     Vaciar carrito
                   </Button>
-                  <Link to={"./checkout"}>
+                  <Link to={"cart/checkout"}>
                     <Button className="btn-empty ms-3">Finalizar compra</Button>
                   </Link>
                 </div>

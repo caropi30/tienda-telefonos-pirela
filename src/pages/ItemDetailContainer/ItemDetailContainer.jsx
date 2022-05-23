@@ -6,17 +6,6 @@ import { useParams } from "react-router-dom";
 import db from "../../services/firebase";
 import { doc, getDoc } from "firebase/firestore";
 
-/*function getItemData(id) {
-  const dataPromise = new Promise((resolve) => {
-    const item = data.filter((item) => item.id === parseInt(id));
-    console.log(item);
-    setTimeout(() => {
-      resolve(item[0]);
-    }, 2000);
-  });
-  return dataPromise;
-}*/
-
 const ItemDetailContainer = () => {
   const [item, setItem] = useState({});
   const { id } = useParams();
@@ -33,10 +22,6 @@ const ItemDetailContainer = () => {
   };
 
   useEffect(() => {
-    /* console.log(id);
-    getItemData(id)
-      .then((response) => {
-        setItem(response);*/
     getSelectedProduct(id);
     console.log(item);
   }, [id]);

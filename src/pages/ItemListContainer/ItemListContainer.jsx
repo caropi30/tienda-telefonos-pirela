@@ -7,19 +7,6 @@ import ItemListCarousel from "../../components/ItemListCarousel/ItemListContaine
 import db from "../../services/firebase";
 import { collection, getDocs, query, where } from "firebase/firestore";
 
-/*function getData(category) {
-  const dataPromise = new Promise((resolve) => {
-    const categoryFilter = category
-      ? data.filter((item) => item.category === category)
-      : data;
-    setTimeout(() => {
-      resolve(categoryFilter);
-    }, 2000);
-  });
-
-  return dataPromise;
-}*/
-
 const ItemListContainer = (props) => {
   const [products, setProducts] = useState([]);
   const { categoryId } = useParams();
