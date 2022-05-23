@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     max-height: fit-content;
+ 
 
     &--img {
       width: 180px;
@@ -97,6 +98,17 @@
     &--btnDetail {
       &-link {
         color: #fff;
+        background-color: #ea4c89;
+        border-radius: 1px solid #ea4c89 ;
+        border-radius: 50px;
+      }
+    }
+    &--btnDetail:hover {
+      &-link {
+        color: #ea4c89;
+        background-color: #fff;
+        border: 1px solid #ea4c89;
+        border-radius: 50px;
       }
     }
   }
@@ -130,16 +142,20 @@
     }
 
     &--btnDetail {
-      &-link {
+      
         color: #fff;
-      }
-      &-link:hover {
-        color: #fff;
-      }
+        background-color: #ea4c89;
+        border-radius: 1px solid #ea4c89 ;
+        border-radius: 50px;
+    
     }
-
-    &-btnDetail:hover {
-      background-color: pink;
+    &--btnDetail:hover {
+      
+        color: #ea4c89;
+        background-color: #fff;
+        border: 1px solid #ea4c89;
+        border-radius: 50px;
+      
     }
   }
   .catalogue-card:hover {

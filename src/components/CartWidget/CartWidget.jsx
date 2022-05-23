@@ -10,9 +10,9 @@ const CartWidget = (props) => {
   return (
     <>
       <Link to={"/cart/"}>
-        <Button variant={{ variant: variant }} className="btn btn-primary">
-          {text ? text : "default text"} <FaShoppingCart />
-        </Button>
+        <Button variant={{ variant: variant }} className="btn btn-primary btn-shop">
+          <FaShoppingCart /> {text ? text : "default text"}
+        </Button>{" "}
       </Link>
     </>
   );
