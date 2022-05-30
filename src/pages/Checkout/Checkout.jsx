@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useCartContext } from "../../context/CartContextProvider";
 import db from "../../services/firebase";
 import { collection, addDoc } from "firebase/firestore";
+import { BsFillEmojiSunglassesFill } from "react-icons/bs";
 
 const Checkout = () => {
   const { cartList, totalPrice } = useCartContext();
@@ -15,6 +16,7 @@ const Checkout = () => {
   });
 
   const { name, email, phone } = buyer;
+  const [orderId, setOrderId] = useState();
 
   const handleInputChange = (e) => {
     setBuyer({ ...buyer, [e.target.name]: e.target.value });
@@ -23,8 +25,7 @@ const Checkout = () => {
   const generateOrder = async (data) => {
     try {
       const order = await addDoc(collection(db, "orders"), data);
-      console.log("orders", order);
-      console.log("ordersId", order.id);
+      setOrderId(order.id);
     } catch (error) {
       console.log("ha ocurrido un error");
     }
@@ -38,63 +39,75 @@ const Checkout = () => {
     });
     const total = totalPrice();
     const data = { buyer, items, date, total };
-    console.log(data);
     generateOrder(data);
   };
 
   return (
     <>
       <Container className="checkout">
-        <h2 className="checkout-title">Casi terminas...</h2>
-        <h5 className="checkout-subtitle">Por favor completa los datos:</h5>
-        <Row>
-          <Form
-            onSubmit={handleSubmit}
-            className="d-flex flex-column checkout-form"
-          >
-            <label htmlFor="name" className="my-2">
-              Nombre
-              <Form.Control
-                className="mb-3"
-                size="sm"
-                type="text"
-                placeholder="Nombre"
-                name="name"
-                value={name}
-                onChange={handleInputChange}
-              />
-            </label>
+        {!orderId ? (
+          <>
+            <h2 className="checkout-title">Casi terminas...</h2>
+            <h5 className="checkout-subtitle">Por favor completa los datos</h5>
+            <Row>
+              <Form
+                onSubmit={handleSubmit}
+                className="d-flex flex-column checkout-form"
+              >
+                <label htmlFor="name" className="my-2">
+                  Nombre
+                  <Form.Control
+                    className="mb-3"
+                    size="sm"
+                    type="text"
+                    placeholder="Nombre"
+                    name="name"
+                    value={name}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </label>
 
-            <label htmlFor="email" className="my-2">
-              Correo electrónico
-              <Form.Control
-                className="mb-3"
-                size="sm"
-                type="text"
-                placeholder="Correo electrónico"
-                name="email"
-                value={email}
-                onChange={handleInputChange}
-              />
-            </label>
-            <label htmlFor="phone" className="my-2">
-              Teléfono
-              <Form.Control
-                className="mb-3"
-                size="sm"
-                type="number"
-                placeholder="569..."
-                name="phone"
-                value={phone}
-                onChange={handleInputChange}
-              />
-            </label>
+                <label htmlFor="email" className="my-2">
+                  Correo electrónico
+                  <Form.Control
+                    className="mb-3"
+                    size="sm"
+                    type="text"
+                    placeholder="Correo electrónico"
+                    name="email"
+                    value={email}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </label>
+                <label htmlFor="phone" className="my-2">
+                  Teléfono
+                  <Form.Control
+                    className="mb-3"
+                    size="sm"
+                    type="number"
+                    placeholder="569..."
+                    name="phone"
+                    value={phone}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </label>
 
-            <Button className="btn-checkout" type="submit">
-              Finalizar compra
-            </Button>
-          </Form>
-        </Row>
+                <Button className="btn-checkout" type="submit">
+                  Finalizar compra
+                </Button>
+              </Form>
+            </Row>
+          </>
+        ) : (
+          <>
+            <h1>Felicidades! Has finalizado tu compra con éxito </h1>
+            <h4>{`Su código de compra es: ${orderId}`}</h4>
+            <BsFillEmojiSunglassesFill />
+          </>
+        )}
       </Container>
     </>
   );

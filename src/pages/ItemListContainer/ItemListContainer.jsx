@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./ItemListContainer.scss";
 import ItemList from "../../components/ItemList/ItemList";
-//import data from "../../stockData";
 import ItemListCarousel from "../../components/ItemListCarousel/ItemListContainerCarousel";
 import db from "../../services/firebase";
 import { collection, getDocs, query, where } from "firebase/firestore";
