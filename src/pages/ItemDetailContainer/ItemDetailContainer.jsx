@@ -15,6 +15,7 @@ const ItemDetailContainer = () => {
       const result = { id: response.id, ...response.data() };
 
       setItem(result);
+      console.log(result);
     } catch (error) {
       console.log("ha ourrido un error");
     }
@@ -22,7 +23,6 @@ const ItemDetailContainer = () => {
 
   useEffect(() => {
     getSelectedProduct(id);
-    console.log(item);
   }, [id]);
 
   return (

@@ -20,7 +20,7 @@ const Cart = () => {
           {cartList.length > 0 ? (
             <>
               <div className="d-flex flex-column text-end">
-                <h4 classNAme="my-3">Total: ${totalPrice()} CLP</h4>
+                <h4 className="my-3">Total: ${totalPrice()} CLP</h4>
                 <div className="">
                   <Button className="btn-empty " onClick={() => emptyCart()}>
                     Vaciar carrito

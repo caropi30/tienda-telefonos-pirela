@@ -7,7 +7,8 @@ import { Link } from "react-router-dom";
 import { useCartContext } from "../../context/CartContextProvider";
 
 const ItemDetail = (product) => {
-  const { id, name, brand, src, price, stock } = product;
+  const { id, name, brand, src, price, stock, description } = product;
+  console.log("description", description);
 
   const [productQuantity, setProductQuantity] = useState(0);
 
@@ -33,6 +34,7 @@ const ItemDetail = (product) => {
           <Card.Body className="card-detail--txt">
             <Card.Title className="card-detail--txt-name">{name}</Card.Title>
             <Card.Text className="card-detail--txt-brand">{brand}</Card.Text>
+
             <Card.Text className="card-detail--txt-price">
               ${price} CLP
             </Card.Text>

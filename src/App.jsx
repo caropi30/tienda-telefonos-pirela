@@ -12,8 +12,8 @@ import Checkout from "./pages/Checkout/Checkout";
 function App() {
   return (
     <div className="App">
-      <NavBar />
       <CartContextProvider>
+        <NavBar />
         <Routes>
           <Route
             path="/"
