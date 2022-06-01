@@ -9,7 +9,7 @@ import { BsFillEmojiSunglassesFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const Checkout = () => {
-  const { cartList, totalPrice } = useCartContext();
+  const { cartList, totalPrice, emptyCart } = useCartContext();
   const [buyer, setBuyer] = useState({
     name: "",
     email: "",
@@ -41,6 +41,7 @@ const Checkout = () => {
     const total = totalPrice();
     const data = { buyer, items, date, total };
     generateOrder(data);
+    emptyCart();
   };
 
   return (
