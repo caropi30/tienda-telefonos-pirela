@@ -6,6 +6,7 @@ import { useCartContext } from "../../context/CartContextProvider";
 import db from "../../services/firebase";
 import { collection, addDoc } from "firebase/firestore";
 import { BsFillEmojiSunglassesFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Checkout = () => {
   const { cartList, totalPrice } = useCartContext();
@@ -106,6 +107,9 @@ const Checkout = () => {
             <h1>Felicidades! Has finalizado tu compra con éxito </h1>
             <h4>{`Su código de compra es: ${orderId}`}</h4>
             <BsFillEmojiSunglassesFill />
+            <Link to={"/"}>
+              <Button className="btn-empty ms-3">Volver al Home</Button>
+            </Link>
           </>
         )}
       </Container>

@@ -35,6 +35,9 @@ const Cart = () => {
             <>
               <h1>El carrito está vacío </h1>
               <MdProductionQuantityLimits />
+              <Link to={"/"}>
+                <Button className="btn-empty ms-3">Volver al Home</Button>
+              </Link>
             </>
           )}
         </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./components/NavBar/NavBar";
 import ItemListContainer from "./pages/ItemListContainer/ItemListContainer";
@@ -15,10 +14,7 @@ function App() {
       <CartContextProvider>
         <NavBar />
         <Routes>
-          <Route
-            path="/"
-            element={<ItemListContainer greeting="Welcome to my shop" />}
-          />
+          <Route path="/" element={<ItemListContainer />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="cart/checkout" element={<Checkout />} />
           <Route path="/category/:categoryId" element={<ItemListContainer />} />
